@@ -1,50 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="node_modules/bootswatch/dist/sandstone/bootstrap.min.css">
-    <title>Pomoc domácím mazlíčkům</title>
-</head>
-<body background="pes-bez-domova.png">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Darovat</a>
-               <div class="dropdown-menu">
-                <a class="dropdown-item" href="na-pomoc-kockam.html">Na pomoc kočkam</a>
-                <a class="dropdown-item" href="na-pomoc-psam.html">Na pomoc psam</a>
-                <a class="dropdown-item" href="na-pomoc-papouskam.html">Na pomoc papouškam</a>
-               </div> 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">O nás</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Staňte se dobrovolníkem</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Hledat">
-              <button class="btn btn-primary" type="button">Hledat</button>
-            </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/sandstone/bootstrap.min.css">
+  <title>Pomoc domácím mazlíčkům</title>
+</head>
+
+<body style="background-color: burlywood;">
+
+  <nav class="navbar navbar-expand-sm" style="background-color: rgb(62, 12, 12);">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="javascript:void(0)">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Darovat</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="na-pomoc-kockam.html">Na pomoc kočkám</a>
+              <a class="dropdown-item" href="na-pomoc-psum.html">Na pomoc psům</a>
+              <a class="dropdown-item" href="na-pomoc-papouskum.html">Na pomoc papouškům</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="javascript:void(0)">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="javascript:void(0)">Staňte se dobrovolníkem</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 align="center" class="text-black">Pomoc zvířatům</h1>
+    <button type="button" class="btn btn-success">Darujte 50 Kč</button>
+    <button type="button" class="btn btn-success">Darujte 100 Kč</button>
+    <button type="button" class="btn btn-success">Darujte 200 Kč</button>
+    <h2 align="center" class="text-black">Příklad zvířat, která jsme adoptovali</h1>
+
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="obrazky/kocka.jpg" alt="kocka" class="d-block mx-auto" style="width:75%">
+            <div class="carousel-caption">
+              <h3 class="text-black">Los Angeles</h3>
+              <p class="text-black">We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="obrazky/papousek.webp" alt="papousek" class="d-block mx-auto" style="width:75%">
+            <div class="carousel-caption">
+              <h3 class="text-black">Chicago</h3>
+              <p class="text-black">Thank you, Chicago!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="obrazky/pes.png" alt="pes" class="d-block mx-auto" style="width:75%">
+            <div class="carousel-caption">
+              <h3 class="text-black">New York</h3>
+              <p class="text-black">We love the Big Apple!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="obrazky/jezek.jpg" alt="jezek" class="d-block mx-auto" style="width:75%">
+            <div class="carousel-caption">
+              <h3 class="text-black">New York</h3>
+              <p class="text-black">We love the Big Apple!</p>
+            </div>
           </div>
         </div>
-      </nav>
-      <h1 align="center" style="color: blue;">Pomoc zvířatům</h1>
-      <button type="button" class="btn btn-success">Darujte 50 Kč</button>
-      <button type="button" class="btn btn-success">Darujte 100 Kč</button>
-      <button type="button" class="btn btn-success">Darujte 200 Kč</button>
-      <h1 align="center" style="color: blue;">Příklad některých zvířat, která jsme adoptovali</h1>
-    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+  </div>
 </body>
+
 </html>
