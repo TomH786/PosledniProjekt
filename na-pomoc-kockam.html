@@ -15,7 +15,8 @@
 
   <nav class="navbar navbar-expand-sm" style="background-color: rgb(203, 156, 94)">
     <div class="container-fluid">
-      <a class="navbar-brand text-black" href="index.html"><i class="fa-solid fa-paw fa-rotate-by fa-lg" style="color: #382600; --fa-rotate-angle: 315deg;"></i></a>
+      <a class="navbar-brand text-black" href="index.html"><i class="fa-solid fa-paw fa-rotate-by fa-lg"
+          style="color: #382600; --fa-rotate-angle: 315deg;"></i></a>
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
@@ -35,10 +36,12 @@
           </li>
         </ul>
         <li class="nav-item d-flex me-3">
-          <a class="nav-link text-black" href="prihlasit-se.html"><button type="button" class="btn">Přihlásit se</button></a>
+          <a class="nav-link text-black" href="prihlasit-se.html"><button type="button" class="btn">Přihlásit
+              se</button></a>
         </li>
         <li class="nav-item d-flex">
-          <a class="nav-link text-black" href="registrace.html"><button type="button" class="btn">Registrovat</button></a>
+          <a class="nav-link text-black" href="registrace.html"><button type="button"
+              class="btn">Registrovat</button></a>
         </li>
       </div>
     </div>
@@ -47,11 +50,108 @@
   <p class="invisible">a</p>
   <p class="invisible">a</p>
 
-  <div>
+  <div class="container">
+
+    <h1 class="text-center">PŘISPĚJTE NA NAŠE KOČKY</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-5 m-5 ">
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc1.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Míca</h5>
+            <p class="card-text text-light">Vychází 16.4.2024</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc2.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Furrdinand</h5>
+            <p class="card-text text-light">Vychází 25.5.2024</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc3.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Gustav</h5>
+            <p class="card-text text-light">Vychází v roce 2025</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc4.jpg" data-bs-toggle="modal" data-bs-target="#Modal1"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Whiskers</h5>
+            <p class="card-text text-light">Vychází 7.5.2024</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc5.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Felix</h5>
+            <p class="card-text text-light">Vychází 14.9.2024</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgb(71, 44, 9);">
+          <img src="obrazky/kocka-pomoc6.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Simba</h5>
+            <p class="card-text text-light">Vychází 20.4.2024</p>
+            <button type="button" class="btn m-sm-1" data-bs-toggle="modal" data-bs-target="#Modal1"
+              style="background-color: burlywood;">Přispět</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="Modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Kolik chcete přispět?</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <button type="button" class="btn m-sm-1" style="background-color: rgb(203, 156, 94);">Přispět 100 Kč</button>
+            <button type="button" class="btn m-sm-1" style="background-color: rgb(203, 156, 94);">Přispět 200 Kč</button>
+            <button type="button" class="btn m-sm-1" style="background-color: rgb(203, 156, 94);">Přispět 500 Kč</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </div>
+
   <i class="fa-solid fa-paw fa-beat fa-2xl" style="color: #FFD43B;"></i>
   <!-- Добавити, щоб кожного разу при натиску на кнопку лапки вискакувало модально вікно з вигуком, яке вимовляє ця тварина -->
+
+
 </body>
 
 </html>
