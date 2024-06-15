@@ -8,6 +8,11 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="node_modules/bootswatch/dist/sandstone/bootstrap.min.css">
   <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
   <title>Dobrovolnictví</title>
 </head>
 
@@ -50,10 +55,65 @@
   <p class="invisible">a</p>
   <p class="invisible">a</p>
 
-  <div>
-    <h1 align="center">Vyplňte formulář</h1>
-  </div>
+  <div class="container">
+    <h1 align="center">VYPLŇTE FORMULÁŘ A STAŇTE SE DOBROVOLNÍKEM:</h1>
 
+    <form action>
+      <div class="mb-5 mt-5 form-floating">
+          <input class="form-control" type="text" id="fname" name="fname" placeholder>
+          <label for="jmeno">Jméno</label><br>
+      </div>
+      <div class="mb-5 mt-5 form-floating">
+          <input class="form-control" type="text" id="lname" name="lname" placeholder>
+          <label for="prijmeni">Přijmení</label><br>
+      </div>
+      <div class="mb-5 mt-5 form-floating">
+          <input class="form-control" type="text" id="email" name="fname" placeholder>
+          <label for="email">Email</label><br>
+      </div>
+
+      <div>
+          <h5>Vyberte vaše koníčky:</h3>
+              <select class="js-example-basic-multiple" style="width: 500px;" name="konicky" multiple="multiple" id="dfsa" required>
+                  <option value="m">Malování</option>
+                  <option value="f">Fotografování</option>
+                  <option value="ck">Čtení knih</option>
+                  <option value="s">Sportování</option>
+                  <option value="c">Cestování</option>
+                  <option value="v">Vaření</option>
+                  <option value="p">Pečení</option>
+                  <option value="z">Zahradničení</option>
+                  <option value="r">Rybaření</option>
+                  <option value="vh">Videohry</option>
+                  <option value="dm">Domácí mazlíčci</option>
+                  <option value="f">Filmy</option>
+                  <option value="p">Programování</option>
+                  <option value="v">Vyšívání</option>
+              </select>
+      </div>
+
+      <button style="background-color: rgb(203, 156, 94)" type="submit" class="btn mt-5">Potvrdit</button>
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        $('.js-example-basic-multiple').select2();
+      });
+    </script>
+</div>
+
+  <p class="invisible">a</p>
+
+  <div class="p-5 fixed-bottom" style="background-color: rgb(203, 156, 94);">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-6" style="color: #382600;">Dokumentace</h1>
+      </div>
+      <div class="col-10">
+        <h1><a download class="fa-solid fa-download fa-lg btn" href="Dokumentace posledního projektu.pdf" style="color: #382600;"></a></h1>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
